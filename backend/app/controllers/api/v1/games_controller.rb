@@ -1,7 +1,7 @@
 class Api::V1::GamesController < ApplicationController
   before_action :find_game, only: [:update]
  def index
-   @games = Note.all
+   @games = Game.all
    render json: @games
  end
 
@@ -17,7 +17,7 @@ class Api::V1::GamesController < ApplicationController
  private
 
  def game_params
-   params.permit(:title, :content)
+   params.permit(:title, :console, :quantity, :price, :genre, :img, :description)
  end
 
  def find_game

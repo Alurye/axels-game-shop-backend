@@ -8,7 +8,7 @@ Rails.application.routes.draw do
         resources :customers, only: [:index, :create, :destroy, :update]
         resources :store, only: [:index, :create, :destroy]
         resources :admin, only: [:index, :create, :destroy, :update]
-
+        
 
       end
     end
