@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 2018_06_28_155220) do
     t.string "country"
     t.string "state"
     t.integer "zip_code"
+    t.integer "store_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -39,21 +40,25 @@ ActiveRecord::Schema.define(version: 2018_06_28_155220) do
     t.string "title"
     t.string "console"
     t.integer "quantity"
-    t.decimal "price"
+    t.decimal "price", precision: 10, scale: 2
     t.string "genre"
     t.string "img"
     t.string "description"
+    t.integer "store_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "purchases", force: :cascade do |t|
+    t.integer "customer_id"
+    t.integer "game_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "stores", force: :cascade do |t|
     t.string "name"
+    t.integer "admin_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

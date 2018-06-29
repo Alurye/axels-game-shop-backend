@@ -9,7 +9,7 @@ class CreateCustomers < ActiveRecord::Migration[5.2]
       t.string :country
       t.string :state
       t.integer :zip_code
-
+      t.integer :store_id
       t.timestamps
     end
   end

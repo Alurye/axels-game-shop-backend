@@ -14,10 +14,15 @@ class Api::V1::GamesController < ApplicationController
    end
  end
 
+ def create
+   @game = Game.create(game_params)
+   render json: @game
+ end
+
  private
 
  def game_params
-   params.permit(:title, :console, :quantity, :price, :genre, :img, :description)
+   params.permit(:title, :console, :quantity, :price, :genre, :img, :description, :store_id)
  end
 
  def find_game
