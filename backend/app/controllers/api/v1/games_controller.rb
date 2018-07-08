@@ -1,8 +1,12 @@
 class Api::V1::GamesController < ApplicationController
-  before_action :find_game, only: [:update]
+  # before_action :find_game,  only: [:update]
+  # before_action :requires_login, only: [:index]
+
+
  def index
-   @games = Game.all
-   render json: @games
+       @games = Game.all
+       render json: @games
+
  end
 
  def update
@@ -13,6 +17,8 @@ class Api::V1::GamesController < ApplicationController
      render json: { errors: @game.errors.full_messages }, status: :unprocessible_entity
    end
  end
+
+
 
  def create
    @game = Game.create(game_params)
