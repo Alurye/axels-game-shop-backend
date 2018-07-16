@@ -11,7 +11,7 @@ games = [
 	   title: "Final Fantasy VII",
 		 console: "Sony Playstation",
 		 quantity: 1,
-		 price: 45.00,
+		 price: 45,
 		 genre: "RPG",
 		 img: "http://www.mobygames.com/images/covers/l/34894-final-fantasy-vii-playstation-front-cover.jpg",
 		 description: "Final Fantasy VII follows the story of mercenary Cloud Strife, who is hired by the eco-terrorist group AVALANCHE—led by Barret Wallace—to help fight the mega-corporation Shinra Electric Power Company, who attempts to drain the planet's lifeblood as an energy source to further their profits. Apathetic to the cause, Cloud initially fights for personal gain, and for the promise he made to childhood friend Tifa Lockhart. Cloud eventually joins forces with many others to save the planet, which is threatened by Shinra and Cloud's nemesis Sephiroth, and discovers a reason to fight for a cause other than his own."
@@ -21,7 +21,7 @@ games = [
 		title: "Gran Turismo 2",
 		console: "Sony Playstation",
 		quantity: 2,
-		price: 25.00,
+		price: 25,
 		genre: "Racing",
 		img: "http://www.mobygames.com/images/covers/l/26373-gran-turismo-2-playstation-front-cover.jpg",
 		description: "Gran Turismo 2 is the second game in the Gran Turismo series of racing games exclusively for the PlayStation. The racing game features 20 tracks and over 400 vehicles, an arcade mode and a simulation mode, and also supports two-player split screen racing. It's the first GT game to feature rally racing (even though it's like a time trial)."
@@ -40,7 +40,7 @@ games = [
 		title: "Street Fighter Collection",
 		console: "Sony PlayStation",
 		quantity: 1,
-		price: 15.00,
+		price: 15,
 		genre: "Fighting",
 		img: "http://www.mobygames.com/images/covers/l/82496-street-fighter-collection-playstation-front-cover.jpg",
 		description: "Street Fighter Collection is a bundle comprising several different games of the Street Fighter series. It includes: Super Street Fighter II: The New Challengers, Super Street Fighter II Turbo, Street Fighter Alpha 2 Gold (updated Street Fighter Alpha 2 with balancing fixes: Evil Ryu and Cammy added as playable characters, timing of some characters changed)."
@@ -50,7 +50,7 @@ games = [
 		title: "Soul Calibur",
 		console: "Sega Dreamcast",
 		quantity: 1,
-		price: 25.00,
+		price: 25,
 		genre: "Fighting",
 		img: "http://www.mobygames.com/images/covers/l/7154-soulcalibur-dreamcast-front-cover.jpg",
 		description: "A fighting game to end all fighting games. A sequel to Soul Blade, Soul Calibur takes place in a time inspired by a mixture of 16th-century ancient China and oriental medieval fantasies and legends."
@@ -59,7 +59,7 @@ games = [
 		title: "Phantasy Star Online",
 		console: "Sega Dreamcast",
 		quantity: 2,
-		price: 30.00,
+		price: 30,
 		genre: "RPG",
 		img: "http://www.mobygames.com/images/covers/l/90197-phantasy-star-online-dreamcast-front-cover.jpg",
 		description: "Welcome to the first worldwide console RPG!",
@@ -68,7 +68,7 @@ games = [
 		title: "Shenmue",
 		console: "Sega Dreamcast",
 		quantity: 2,
-		price: 55.00,
+		price: 55,
 		genre: "Adventure",
 		img: "http://www.mobygames.com/images/covers/l/35667-shenmue-dreamcast-front-cover.jpg",
 		description: "On a November day when the snow turned to rain, Ryu Hazuki arrives home just in time to see his father killed by Lan Di, a man Ryu's father obviously knew very well. Ryu attempts to stop Lan Di, but is effortlessly beaten to within an inch of his life. After recovering from his injuries Ryu sets out to track down his father's murderer, as well as uncover his family's secrets and the mystery of the Phoenix and Dragon mirrors that Lan Di seeks."
@@ -77,7 +77,7 @@ games = [
 		title: "GoldenEye 007",
 		console: "Nintendo 64",
 		quantity: 2,
-		price: 60.00,
+		price: 60,
 		genre: "Action",
 		img: "http://www.mobygames.com/images/covers/l/6129-goldeneye-007-nintendo-64-front-cover.jpg",
 		description: "The name is Bond. James Bond. The famous hero of Ian Fleming's novels returns in this first-person shooter, which is based on the movie of the same name. Agent 007 and his friend Alec Trevalyan (a.k.a. Agent 006) were sent to Soviet Union on a secret mission. But everything goes wrong, James Bond barely escapes, and his friend is presumed dead."
@@ -86,7 +86,7 @@ games = [
 		title: "Starfox 64",
 		console: "Nintendo 64",
 		quantity: 2,
-		price: 54.00,
+		price: 54,
 		genre: "Action",
 		img: "http://www.mobygames.com/images/covers/l/6132-star-fox-64-nintendo-64-front-cover.jpg",
 		description: "Fox McCloud returns to once again rid evil from the Lylat System in this 64-bit remake of the SNES hit."
@@ -96,7 +96,7 @@ games = [
 		title: "Bloody Roar",
 		console: "Sony Playstation",
 		quantity: 2,
-		price: 30.00,
+		price: 30,
 		genre: "Fighting",
 		img: "http://www.mobygames.com/images/covers/l/15931-bloody-roar-playstation-front-cover.jpg",
 		description: "Unlike other beat 'em ups, Bloody Roar has a unique twist. At a press of a button, your character changes into a beast of unique strength and ability over the characters normal attacks. Each character has his/her own beast to transform into, and most battles come down to how you use this transformation to your advantage. "
@@ -106,7 +106,7 @@ games = [
 		title: "Tekken 3",
 		console: "Sony Playstation",
 		quantity: 2,
-		price: 20.00,
+		price: 20,
 		genre: "Fighting",
 		img: "http://www.mobygames.com/images/covers/l/5934-tekken-3-playstation-front-cover.jpg",
 		description: "Tekken Force, a paramilitary organization protecting the Mishima karate fighters, is nearly obliterated by the might Ogre. Heihachi Mishima's only hope is his grandson Jin Kazama, who lives with his mother Jun, unaware of his legacy. When Ogre attacks his home and presumably kills his mother, Jin seeks out his grandfather and learns the martial arts of the family. On his nineteenth birthday, Heihachi announces the King of the Iron Fist Tournament 3, hoping to use Jin to remove Ogre out of his way."
@@ -116,7 +116,7 @@ games = [
 		title: "Xenogears",
 		console: "Sony Playstation",
 		quantity: 1,
-		price: 125.00,
+		price: 125,
 		genre: "RPG",
 		img: "http://www.mobygames.com/images/covers/l/134437-xenogears-playstation-front-cover.png",
 		description: "A war has been raging on the continent of Ignas between the Kislev Empire to the north and the kingdom of Aveh in the south. It has gone for so long that people have forgotten the cause. As a mysterious organization known as 'Ethos' introduces an ancient technology in form of huge mega-robots, the tides are turning. Gebler, a military organization with an unknown agenda, is pulling the strings and supports Aveh to regain its authority over Kislev."
@@ -125,13 +125,16 @@ games = [
 		title: "Banjo-Kazooie",
 		console: "Nintendo 64",
 		quantity: 2,
-		price: 40.00,
+		price: 40,
 		genre: "Adventure",
 		img: "http://www.mobygames.com/images/covers/l/17730-banjo-kazooie-nintendo-64-front-cover.jpg",
 		description: "Banjo-Kazooie's fairy tale back story is reminiscent of Snow White's. A gnarled, ugly witch named Gruntilda asks her magical cauldron who is the fairest of them all. Of course, the pot's answer doesn't please the hag: he singles out Banjo's sister, Tooty. When Tooty turns up missing, Banjo and his birdie buddy Kazooie set out to find her."
 	}
 
 ]
+
+admin = Admin.create(username: "admin", password: "yappapi");
+store = Store.create(name: "Axels Game Shop", admin_id: 1);
 
 games.each do |game|
    Game.create(title: game[:title], console: game[:console], quantity: game[:quantity], price: game[:price], genre: game[:genre], img: game[:img], description: game[:description], store_id: 1);

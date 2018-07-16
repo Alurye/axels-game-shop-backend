@@ -4,7 +4,7 @@ class CreateGames < ActiveRecord::Migration[5.2]
       t.string  :title
       t.string  :console
       t.integer :quantity
-      t.decimal :price, precision: 10, scale: 2
+      t.decimal :price, :precision => 10, :scale => 2
       t.string  :genre
       t.string  :img
       t.string  :description

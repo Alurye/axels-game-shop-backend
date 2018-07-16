@@ -6,7 +6,7 @@ class Admin < ApplicationRecord
 
 
   has_many :games, through: :store
-  has_many :customers, through: :store
+  has_many :orders, through: :store
 
   validates :username, presence: true, uniqueness: true
   validates :password, presence: true

@@ -1,6 +1,5 @@
 class Store < ApplicationRecord
   has_many :games
-  has_many :customers
-  has_many :purchases, through: :customers
+  has_many :orders
   belongs_to :admin
 end

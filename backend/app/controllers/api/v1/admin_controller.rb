@@ -22,7 +22,7 @@ class Api::V1::AdminController < ApplicationController
       token = JWT.encode payload, ENV['JWT_SECRET'], 'HS256'
       render json: {
         token: token,
-        id : @admin.id
+        id: @admin.id
       }
     else
     render json: {
@@ -31,11 +31,13 @@ class Api::V1::AdminController < ApplicationController
     end
 
 
+
   end
 
 
 
    def all_games
-    render json: @games
+     @admin = Admin.find_by(params[:id])
+    render json: @admin.games
   end
 end
