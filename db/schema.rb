@@ -17,20 +17,14 @@ ActiveRecord::Schema.define(version: 2018_06_28_155220) do
 
   create_table "admins", force: :cascade do |t|
     t.string "username"
-    t.string "password"
+    t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "customers", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.string "address"
-    t.string "address_2"
-    t.string "e_mail"
-    t.string "country"
-    t.string "state"
-    t.integer "zip_code"
+  create_table "game_orders", force: :cascade do |t|
+    t.integer "order_id"
+    t.integer "game_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -39,21 +33,33 @@ ActiveRecord::Schema.define(version: 2018_06_28_155220) do
     t.string "title"
     t.string "console"
     t.integer "quantity"
-    t.decimal "price"
+    t.decimal "price", precision: 10, scale: 2
     t.string "genre"
     t.string "img"
     t.string "description"
+    t.integer "store_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "purchases", force: :cascade do |t|
+  create_table "orders", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "address"
+    t.string "address_2"
+    t.string "e_mail"
+    t.string "country"
+    t.string "state"
+    t.integer "zip_code"
+    t.integer "store_id"
+    t.string "order_number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "stores", force: :cascade do |t|
     t.string "name"
+    t.integer "admin_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

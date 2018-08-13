@@ -1,8 +1,12 @@
 class Api::V1::GamesController < ApplicationController
-  before_action :find_game, only: [:update]
+  # before_action :find_game,  only: [:update]
+  # before_action :requires_login, only: [:index]
+
+
  def index
-   @games = Game.all
-   render json: @games
+       @games = Game.all
+       render json: @games
+
  end
 
  def update
@@ -14,10 +18,24 @@ class Api::V1::GamesController < ApplicationController
    end
  end
 
+
+
+ def create
+   @game = Game.create(game_params)
+   render json: @game
+ end
+
+ def destroy
+   @game = Game.find(params[:id])
+   @game.destroy
+   render json: @games
+
+ end
+
  private
 
  def game_params
-   params.permit(:title, :console, :quantity, :price, :genre, :img, :description)
+   params.permit(:title, :console, :quantity, :price, :genre, :img, :description, :store_id)
  end
 
  def find_game
