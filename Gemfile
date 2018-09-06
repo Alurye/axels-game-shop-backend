@@ -21,7 +21,8 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
-
+#ams
+gem 'active_model_serializers', '~> 0.10.2'
 
 # ruby-jwt
 gem 'jwt'
