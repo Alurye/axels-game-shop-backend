@@ -1,15 +1,25 @@
 class Api::V1::OrdersController < ApplicationController
-  before_action :find_order, only: [:update]
+  before_action :find_order, only: [:update, :show]
  def index
    @orders = Order.all
-   render json: @orders
+
+   render json: @orders, include: [:games]
  end
 
  def create
+
    @order = Order.create(order_params)
-   render json: @order
+     params[:games].each do |game|
+       @game = Game.find(game[:id])
+       @order.games << @game
+     end
+
+   render json: @order, include: [:games]
  end
 
+def show
+ render json: @order, include: [:games]
+end
 
  def update
    @order.update(order_params)
@@ -23,7 +33,7 @@ class Api::V1::OrdersController < ApplicationController
  private
 
  def order_params
-   params.permit(:first_name, :last_name, :e_mail,:address, :address_2,:state,:country,:zip_code, :store_id, :order_number)
+   params.require(:order).permit(:first_name, :last_name, :e_mail,:address, :address_2,:state,:country,:zip_code, :store_id, :order_number, :games => [:id,:title, :console, :quantity, :price, :genre, :img, :description, :store_id, :created_at, :updated_at, :userQty])
  end
 
  def find_order

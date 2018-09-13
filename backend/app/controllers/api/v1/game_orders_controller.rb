@@ -7,7 +7,7 @@ class Api::V1::GameOrdersController < ApplicationController
 
 
  def create
-   @game = Game.create(game_params)
+   @game = Game.create(game_order_params)
    render json: @game
  end
 
@@ -24,7 +24,7 @@ class Api::V1::GameOrdersController < ApplicationController
  private
 
  def game_order_params
-   params.permit(:title, :content)
+   params.permit(:order_id, :game_id)
  end
 
  def find_game_order

@@ -1,10 +1,12 @@
 class Api::V1::GamesController < ApplicationController
-  # before_action :find_game,  only: [:update]
+  before_action :find_game,  only: [:update, :show]
   # before_action :requires_login, only: [:index]
 
 
  def index
        @games = Game.all
+       # @order = Order.find(params[:order_id])
+       # @games = @order.games
        render json: @games
 
  end
@@ -18,6 +20,9 @@ class Api::V1::GamesController < ApplicationController
    end
  end
 
+def show
+  render json: @game
+end
 
 
  def create
