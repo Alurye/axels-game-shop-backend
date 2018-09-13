@@ -1,8 +1,5 @@
 class Api::V1::AdminController < ApplicationController
 
-  # before_action :requires_login, only: [:all_games]
-  # before_action :requires_user_match, only: [:all_games]
-
   def  index
       @admins = Admin.all
       render json: @admins
@@ -40,4 +37,10 @@ class Api::V1::AdminController < ApplicationController
      @admin = Admin.find_by(params[:id])
     render json: @admin.games
   end
+
+  def all_orders
+    @admin = Admin.find_by(params[:id])
+   render json: @admin.orders
+ end
+
 end

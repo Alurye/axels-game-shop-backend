@@ -21,6 +21,8 @@
 
 post '/signup/', to: 'auth#signup'
 get '/admin/:admin_id/games', to: 'admin#all_games'
+get '/admin/:admin_id/orders', to: 'admin#all_orders'
+
       end
     end
 

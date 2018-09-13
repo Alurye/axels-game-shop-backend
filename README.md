@@ -1,24 +1,24 @@
-# README
+# Axel's Game Shop
+<hr/>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### An online video game e-commerce shop specializing in vintage video games.
 
-Things you may want to cover:
 
-* Ruby version
+## Technology Used
 
-* System dependencies
+<a href="https://github.com/Alurye/axels-game-shop">Front End</a>
 
-* Configuration
+* React
+* Redux
+* Bootstrap
+* Stripe API
 
-* Database creation
+<a href="https://github.com/Alurye/axels-game-shop-backend">Backend </a>
 
-* Database initialization
+* Rails API
+* BCrypt
+* JWT
 
-* How to run the test suite
+<strong>Created by: </strong>
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Arthur Lurye, <a href="https://github.com/Alurye">Github<a/>
