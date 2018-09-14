@@ -17,6 +17,7 @@
 * Rails API
 * BCrypt
 * JWT
+* Stripe
 
 <strong>Created by: </strong>
 
